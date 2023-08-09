@@ -1,0 +1,45 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.editar-form {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.editar-form h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+.editar-form label {
+    font-weight: bold;
+}
+.editar-form select,
+.editar-form input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.acciones {
+    text-align: center;
+    margin-top: 20px;
+}
+.acciones a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.acciones a:hover {
+    background-color: #0056b3;
+}
