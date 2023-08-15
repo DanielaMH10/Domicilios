@@ -22,11 +22,82 @@
 <html>
 <head>
     <title>Lista de Pedidos</title>
-    <link rel="stylesheet"  href="../../../public/css/listadoPedidos.css">
     <?php include URL_JS . 'scripts.php' ?>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+        .table-container {
+            margin: 20px auto;
+            width: 80%;
+        }
+        table {
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #343a40;
+            color: #fff;
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f8f9fa;
+        }
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: #e9ecef;
+        }
+        .acciones {
+            text-align: center;
+        }
+        .acciones a {
+            margin-right: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .acciones a:hover {
+            background-color: #0056b3;
+        }
+        .crear-pedido {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .crear-pedido a {
+            padding: 10px 20px;
+            background-color: #169b63;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .crear-pedido a:hover {
+            background-color: #0056b3;
+        }
+        .acciones {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+    </style>
 </head>
 <body>
     <h1 style="margin-top: 50px;">Lista de Pedidos</h1>
+    <div style="text-align: center;">
+        <a href="../../../index.php" class="btn btn-success">Volver</a>
+    </div>
     <div class="table-container">
         <table class="table table-striped">
             <thead>
@@ -56,6 +127,9 @@
     </div>
     <div class="crear-pedido">
         <a href="<?=URL_VIEW_PEDIDOS ?>create.php" class="btn btn-success">Crear Nuevo Pedido</a>
+    </div>
+    <div class="acciones">
+        <a href="<?=URL_VIEW_DOMI ?>index.php" class="btn btn-success">Volver</a>
     </div>
 </body>
 </html>
